@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paint</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="box">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div id="menu">
+        <div id="palette">
+            <button class="color" onclick="pushColor(this)" id="green"></button>
+            <button class="color" onclick="pushColor(this)" id="blue"></button>
+            <button class="color" onclick="pushColor(this)" id="red"></button>
+            <button class="color" onclick="pushColor(this)" id="yellow"></button>
+            <button class="color" onclick="pushColor(this)" id="black"></button>
+            <button class="color" onclick="pushColor(this)" id="white"></button>
+        </div>
+        <input onchange="paletteColor(this)" type="color" value="#00CC99">
+        <div id="sizeBox">
+            <button value="10" onclick="pushSize(this)" class="size" id="sml"></button>
+            <button value="20" onclick="pushSize(this)" class="size" id="med"></button>
+            <button value="30" onclick="pushSize(this)" class="size" id="big"></button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
